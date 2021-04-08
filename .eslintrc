@@ -30,5 +30,18 @@
     "react/jsx-fragments": 0,
     "react/no-unused-prop-types": 0,
     "import/export": 0
-  }
+  },
+  "@typescript-eslint/member-delimiter-style": [
+    "error",
+    {
+      "multiline": {
+        "delimiter": "none", // 'none' or 'semi' or 'comma'
+        "requireLast": true
+      },
+      "singleline": {
+        "delimiter": "semi", // 'semi' or 'comma'
+        "requireLast": false
+      }
+    }
+  ]
 }
