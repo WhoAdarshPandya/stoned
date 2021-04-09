@@ -1,0 +1,55 @@
+.icon-button {
+  text-align: center;
+  user-select: none;
+  border-radius: 100%;
+  outline: none;
+  cursor: pointer;
+  color: #626262;
+  overflow: hidden;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.icon-button > .ripple {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #bbc3ce85;
+  display: block;
+  content: '';
+  border-radius: 9999px;
+  opacity: 1;
+  animation: 0.9s ease 1 forwards ripple-effect;
+}
+
+.icon-button > .content {
+  position: relative;
+  z-index: 2;
+}
+
+.smallIcon {
+  font-size: 1.5rem;
+}
+
+.mediumIcon {
+  font-size: 2rem;
+}
+
+.largeIcon {
+  font-size: 2.5rem;
+}
+
+.primaryText {
+  color: #1976d2 !important;
+}
+
+.primaryRipple {
+  background: #b4d3f0 !important;
+}
+
+.secondaryText {
+  color: #dc004e !important;
+}
+.secondaryRipple {
+  background: #f4acc5 !important;
+}
