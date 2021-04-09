@@ -39,3 +39,57 @@ export interface AlertProps {
 export interface SvgProviderProps {
   color?: string
 }
+
+export interface TextFieldProps {
+  value?: string
+  variant?: 'standard' | 'outlined' | 'filled' | ''
+  label?: string
+  autoComplete?: boolean
+  color?: 'primary' | 'secondary' | ''
+  type?: 'email' | 'number' | 'password' | 'text' | 'url'
+  onClick?: (e: any) => void
+  onChange?: (e: any) => void
+  readOnly?: boolean
+  disabled?: boolean
+  helperText?: string
+  error?: boolean
+  autoFocus?: boolean
+}
+
+export interface ImageProps {
+  src?: string
+  alt?: string
+  rounded?: boolean
+  onClick?: (e: any) => void
+}
+
+export interface TypographyProps {
+  children?: string
+  variant?:
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | 'subtitle1'
+    | 'subtitle2'
+    | 'body1'
+    | 'body2'
+    | ''
+  color?: 'primary' | 'secondary' | ''
+  muted?: boolean
+  align?: 'left' | 'right' | 'center' | 'justify' | ''
+  gutterBottom?: boolean
+  onClick?: (e: any) => void
+}
+
+export interface BadgeProps {
+  children?: any
+  onClick?: (e: any) => void
+  color?: 'primary' | 'secondary'
+  status_badge?: boolean
+  variant?: 'standard' | 'counter'
+  count?: number
+  anchor?: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left'
+}

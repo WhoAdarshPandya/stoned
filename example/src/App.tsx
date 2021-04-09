@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { Button, IconButton, Avatar, Alert } from 'stoned'
+import {
+  Button,
+  IconButton,
+  Avatar,
+  Alert,
+  TextField,
+  Image,
+  Typography,
+  Badge
+} from 'stoned'
 
 const App = () => {
+  const [name, setName] = useState('')
+  const [surname, setSurname] = useState('')
+  const [branch, setBranch] = useState('')
+  const [txt4, setTxt4] = useState('this')
+  const [txt5, setTxt5] = useState('is')
+  const [txt6, setTxt6] = useState('error')
   return (
     <>
       <Button
@@ -333,6 +348,172 @@ const App = () => {
       <Alert severity='info' />
       <br />
       <Alert severity='success' />
+      <hr />
+      <TextField
+        value={name}
+        onChange={(e: any) => setName(e.target.value)}
+        onClick={(e: any) => console.log(e)}
+        type='text'
+        label='Standard'
+      />
+      <TextField
+        value={surname}
+        onChange={(e: any) => setSurname(e.target.value)}
+        onClick={(e: any) => console.log(e)}
+        type='text'
+        variant='filled'
+        label='Filled'
+      />
+      <TextField
+        value={branch}
+        onChange={(e: any) => setBranch(e.target.value)}
+        onClick={(e: any) => console.log(e)}
+        type='text'
+        variant='outlined'
+        label='Outlined'
+      />
+      ---errors---
+      <TextField
+        value={txt4}
+        onChange={(e: any) => setTxt4(e.target.value)}
+        onClick={(e: any) => console.log(e)}
+        type='text'
+        label='Error Standard'
+        helperText='this is helper'
+        error={true}
+        // autoFocus={true}
+      />
+      <TextField
+        value={txt5}
+        variant='filled'
+        onChange={(e: any) => setTxt5(e.target.value)}
+        onClick={(e: any) => console.log(e)}
+        type='text'
+        label='Error Filled'
+        helperText='this is helper 2'
+        error={true}
+        // autoFocus={true}
+      />
+      <TextField
+        value={txt6}
+        variant='outlined'
+        onChange={(e: any) => setTxt6(e.target.value)}
+        onClick={(e: any) => console.log(e)}
+        type='text'
+        label='Error Outlined'
+        helperText='this is helper 3'
+        error={true}
+        // autoFocus={true}
+      />
+      <hr />
+      <p>images</p>
+      <Image
+        alt='img'
+        onClick={(e: any) => console.log(e)}
+        src='https://images.unsplash.com/photo-1617015606776-c54fd56b69b8?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      />
+      <br />
+      <Image
+        alt='img'
+        rounded
+        onClick={(e: any) => console.log(e)}
+        src='https://www.wonderplugin.com/wp-content/uploads/2016/06/blue-grape-hyacinths.jpg'
+      />
+      <hr />
+      <p>typography</p>
+      <Typography variant='h1' color='primary'>
+        h1. heading
+      </Typography>
+      <Typography variant='h2'>h2. heading</Typography>
+      <Typography variant='h3'>h3. heading</Typography>
+      <Typography variant='h4'>h4. heading</Typography>
+      <Typography variant='h5'>h5. heading</Typography>
+      <Typography variant='h6'>h6. heading</Typography>
+      <Typography variant='subtitle1' muted>
+        subtitle1
+      </Typography>
+      <Typography variant='subtitle2'>subtitle2</Typography>
+      <Typography variant='body1' align='center' muted>
+        this is centered text
+      </Typography>
+      <Typography muted variant='body2' onClick={(e: any) => console.log(e)}>
+        this is body2
+      </Typography>
+      <hr />
+      <p>badges</p>
+      <p>badge with avatars</p>
+      <Badge onClick={(e) => console.log(e)}>
+        <Avatar
+          size='small'
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          // onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge>
+        <Avatar
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge color='secondary'>
+        <Avatar
+          size='large'
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge status_badge>
+        <Avatar
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge status_badge anchor='bottom-left'>
+        <Avatar
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge status_badge anchor='top-left'>
+        <Avatar
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge status_badge anchor='bottom-right'>
+        <Avatar
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge color='secondary'>
+        <IconButton>email</IconButton>
+      </Badge>
+      <Badge color='primary' anchor='top-right' onClick={(e) => console.log(e)}>
+        <IconButton>email</IconButton>
+      </Badge>
+      <p>badge with counter</p>
+      <Badge color='secondary' variant='counter' count={0}>
+        <IconButton>email</IconButton>
+      </Badge>
+      <Badge color='primary' anchor='top-right' variant='counter' count={0}>
+        <IconButton>email</IconButton>
+      </Badge>
+      <Badge color='primary' anchor='top-right' variant='counter' count={7}>
+        <IconButton>delete</IconButton>
+      </Badge>
+      <Badge color='primary' anchor='top-right' variant='counter' count={7}>
+        <Avatar
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
+      <Badge color='primary' anchor='top-left' variant='counter' count={7}>
+        <Avatar
+          src='https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg'
+          onClick={(e) => console.log(e)}
+        />
+      </Badge>
       <hr />
     </>
   )
