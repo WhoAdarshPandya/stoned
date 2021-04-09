@@ -93,3 +93,11 @@ export interface BadgeProps {
   count?: number
   anchor?: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left'
 }
+
+export interface SliderProps {
+  color?: 'primary' | 'secondary'
+  initial: number
+  max: number
+  onChange: (e: any) => void
+  onClick?: (e: any) => void
+}

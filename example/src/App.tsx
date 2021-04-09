@@ -8,7 +8,8 @@ import {
   TextField,
   Image,
   Typography,
-  Badge
+  Badge,
+  Slider
 } from 'stoned'
 
 const App = () => {
@@ -18,6 +19,8 @@ const App = () => {
   const [txt4, setTxt4] = useState('this')
   const [txt5, setTxt5] = useState('is')
   const [txt6, setTxt6] = useState('error')
+  const [sliVal, setSliVal] = useState(0)
+  const [sliVal2, setSliVal2] = useState(0)
   return (
     <>
       <Button
@@ -514,6 +517,19 @@ const App = () => {
           onClick={(e) => console.log(e)}
         />
       </Badge>
+      <hr />
+      <p>slider</p>
+      <Slider initial={0} max={100} onChange={(value) => setSliVal(value)} />
+      <span>{parseInt(`${sliVal}`)}</span>
+      <p>secondary</p>
+      <Slider
+        initial={0}
+        max={100}
+        color='secondary'
+        onChange={(value) => setSliVal2(value)}
+        onClick={(e) => console.log(e)}
+      />
+      <span>{parseInt(`${sliVal2}`)}</span>
       <hr />
     </>
   )

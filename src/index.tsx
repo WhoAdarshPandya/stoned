@@ -8,5 +8,6 @@ export {
   TextField,
   Image,
   Typography,
-  Badge
+  Badge,
+  Slider
 } from './components'
