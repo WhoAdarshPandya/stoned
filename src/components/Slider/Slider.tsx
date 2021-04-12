@@ -15,7 +15,6 @@ export const Slider = ({
   onClick,
   color = 'primary'
 }: SliderProps): JSX.Element => {
-  console.log(color)
   const initialPercentage = getPercentage(initial, max)
   const [curVal, setCurval] = useState(initial)
   let diff: number = 0

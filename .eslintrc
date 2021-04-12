@@ -31,6 +31,8 @@
     "react/no-unused-prop-types": 0,
     "import/export": 0
   },
+  "no-redeclare": "off",
+  "@typescript-eslint/no-redeclare": ["none"],
   "@typescript-eslint/member-delimiter-style": [
     "error",
     {

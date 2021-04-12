@@ -9,7 +9,9 @@ import {
   Image,
   Typography,
   Badge,
-  Slider
+  Slider,
+  Rating,
+  Toast
 } from 'stoned'
 
 const App = () => {
@@ -21,11 +23,12 @@ const App = () => {
   const [txt6, setTxt6] = useState('error')
   const [sliVal, setSliVal] = useState(0)
   const [sliVal2, setSliVal2] = useState(0)
+  const [showToast, setShowToast] = useState(false)
   return (
     <>
       <Button
         color='primary'
-        onClick={(e) => {
+        onClick={(e: any) => {
           console.log(e)
         }}
       >
@@ -530,6 +533,37 @@ const App = () => {
         onClick={(e) => console.log(e)}
       />
       <span>{parseInt(`${sliVal2}`)}</span>
+      <hr />
+      <Rating onChange={(e) => console.log(e)} />
+      <Rating onChange={(e) => console.log(e)} color='secondary' />
+      <hr />
+      <Button
+        onClick={() => {
+          setShowToast((prev) => !prev)
+        }}
+      >
+        show toast
+      </Button>
+      {showToast && (
+        <Toast
+          onFinish={() => {
+            setShowToast(false)
+          }}
+          renderCloseButton={true}
+          onCloseClick={() => {
+            setShowToast(false)
+          }}
+          autoHideDuration={5}
+          renderActionButton={false}
+          actionButtonName='close'
+          onButtonClick={() => {
+            setShowToast(false)
+          }}
+          message='the standard toast'
+          variant='success'
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        />
+      )}
       <hr />
     </>
   )

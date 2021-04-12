@@ -9,5 +9,7 @@ export {
   Image,
   Typography,
   Badge,
-  Slider
+  Slider,
+  Rating,
+  Toast
 } from './components'

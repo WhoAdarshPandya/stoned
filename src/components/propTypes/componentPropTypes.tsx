@@ -101,3 +101,29 @@ export interface SliderProps {
   onChange: (e: any) => void
   onClick?: (e: any) => void
 }
+
+export interface RatingProps {
+  onClick?: (e: any) => void
+  color?: 'primary' | 'secondary'
+  onChange: (e: any) => void
+}
+
+// export type kind = 'single' | 'multi' | 'singleaction' | 'multiaction'
+
+export interface ToastProps {
+  onClick?: (e: any) => void
+  variant?: 'standard' | 'success' | 'warning' | 'info' | 'error'
+  autoHideDuration?: number
+  cancellable?: boolean
+  anchorOrigin?: {
+    vertical?: 'top' | 'bottom' | 'center'
+    horizontal?: 'left' | 'center' | 'right'
+  }
+  onFinish?: () => void
+  onCloseClick?: () => void
+  renderCloseButton?: boolean
+  message?: string
+  renderActionButton?: boolean
+  actionButtonName?: string
+  onButtonClick?: () => void
+}
