@@ -11,5 +11,6 @@ export {
   Badge,
   Slider,
   Rating,
-  Toast
+  Toast,
+  Dialog
 } from './components'

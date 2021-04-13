@@ -11,7 +11,8 @@ import {
   Badge,
   Slider,
   Rating,
-  Toast
+  Toast,
+  Dialog
 } from 'stoned'
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
   const [sliVal, setSliVal] = useState(0)
   const [sliVal2, setSliVal2] = useState(0)
   const [showToast, setShowToast] = useState(false)
+  const [showDialog, setShowDialog] = useState(false)
   return (
     <>
       <Button
@@ -36,7 +38,7 @@ const App = () => {
       </Button>
       <Button
         color='secondary'
-        onClick={(e) => {
+        onClick={(e: any) => {
           console.log(e)
         }}
       >
@@ -546,6 +548,9 @@ const App = () => {
       </Button>
       {showToast && (
         <Toast
+          onClick={(e: any) => {
+            console.log(e)
+          }}
           onFinish={() => {
             setShowToast(false)
           }}
@@ -560,8 +565,39 @@ const App = () => {
             setShowToast(false)
           }}
           message='the standard toast'
-          variant='success'
+          variant='info'
           anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        />
+      )}
+      <hr />
+      <Button
+        onClick={() => {
+          setShowDialog(true)
+        }}
+      >
+        open modal
+      </Button>
+      {showDialog && (
+        <Dialog
+          // onClick={() => {
+          //   alert('on it')
+          // }}
+          onBackdropClick={() => {
+            setShowDialog(false)
+          }}
+          setAutoHide={false}
+          title='Still want to continue?'
+          message='agreeing on this term will make you a strong devotee of sadhguru which is utter bullshit if you ask me'
+          // cancellable={false}
+          positiveButtonText='okay'
+          negativeButtonText='cancel'
+          buttonKind='textColorPrimary'
+          onPositiveButtonClick={() => {
+            setShowDialog(false)
+          }}
+          onNegativeButtonClick={() => {
+            alert('sadhguru ko sunie')
+          }}
         />
       )}
       <hr />

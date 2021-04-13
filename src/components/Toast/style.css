@@ -255,6 +255,9 @@
   .snackbar {
     width: 90% !important;
     margin: 0 auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
   }
   .action-text {
     width: 80% !important;

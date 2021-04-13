@@ -127,3 +127,18 @@ export interface ToastProps {
   actionButtonName?: string
   onButtonClick?: () => void
 }
+
+export interface DialogProps {
+  onBackdropClick?: (e: any) => void
+  onPositiveButtonClick?: (e: any) => void
+  onNegativeButtonClick?: (e: any) => void
+  onClick?: (e: any) => void
+  buttonKind?: 'textColorPrimary' | 'textColorSecondary'
+  title?: string
+  message?: string | any
+  cancellable?: boolean
+  autoHideDuration?: number
+  setAutoHide?: boolean
+  positiveButtonText?: string
+  negativeButtonText?: string
+}
