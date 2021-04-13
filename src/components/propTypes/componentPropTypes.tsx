@@ -15,7 +15,7 @@ export interface ButtonProps {
 export interface IconButtonProps {
   children?: string
   onClick?: (e?: any) => void
-  color?: 'primary' | 'secondary' | ''
+  color?: 'primary' | 'secondary' | '' | 'white'
   disableRipple?: boolean
   size?: 'small' | 'medium' | 'large'
   variant?: 'simple' | 'fab'
@@ -77,7 +77,7 @@ export interface TypographyProps {
     | 'body1'
     | 'body2'
     | ''
-  color?: 'primary' | 'secondary' | ''
+  color?: 'primary' | 'secondary' | '' | 'white'
   muted?: boolean
   align?: 'left' | 'right' | 'center' | 'justify' | ''
   gutterBottom?: boolean
@@ -141,4 +141,25 @@ export interface DialogProps {
   setAutoHide?: boolean
   positiveButtonText?: string
   negativeButtonText?: string
+}
+
+export interface AppbarProps {
+  onClick?: (e: any) => void
+  renderStartIcon?: boolean
+  startIcon?: string
+  title?: string
+  onStartIconClick?: (e: any) => void
+  variant?: 'primary' | 'secondary' | 'dark'
+  renderActionButton?: boolean
+  onActionButtonClick?: (e: any) => void
+  actionButtonName?: string
+  renderIconButton?: boolean
+  iconButtons?: IconButtonsAppbar[] | null
+  onIconButtonClick?: (e: any, name: string) => void
+}
+
+export interface IconButtonsAppbar {
+  name: string
+  hasBadge: boolean
+  count?: number
 }

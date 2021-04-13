@@ -12,5 +12,6 @@ export {
   Slider,
   Rating,
   Toast,
-  Dialog
+  Dialog,
+  Appbar
 } from './components'

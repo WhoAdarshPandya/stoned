@@ -50,6 +50,11 @@
 .secondaryText {
   color: #dc004e !important;
 }
+
+.whiteText {
+  color: #fff !important;
+}
+
 .secondaryRipple {
   background: #f4acc5 !important;
 }

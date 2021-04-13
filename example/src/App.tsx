@@ -12,7 +12,8 @@ import {
   Slider,
   Rating,
   Toast,
-  Dialog
+  Dialog,
+  Appbar
 } from 'stoned'
 
 const App = () => {
@@ -600,6 +601,100 @@ const App = () => {
           }}
         />
       )}
+      <hr />
+      <div className='appbar-container'>
+        <Appbar
+          startIcon='menu'
+          renderStartIcon={true}
+          onStartIconClick={(e) => console.log(e)}
+          onClick={(e) => console.log(e)}
+          renderActionButton={true}
+          onActionButtonClick={() => console.log('hi')}
+          actionButtonName='logout'
+        />
+        <br />
+        <Appbar
+          startIcon='menu'
+          renderStartIcon={true}
+          onStartIconClick={(e) => console.log(e)}
+          onClick={(e) => console.log(e)}
+          // renderActionButton={true}
+          // onActionButtonClick={() => console.log('hi')}
+          // actionButtonName='logout'
+          renderIconButton={true}
+          iconButtons={[
+            { name: 'email', hasBadge: true, count: 4 },
+            { name: 'notifications', count: 9, hasBadge: true },
+            { name: 'account_circle', hasBadge: false }
+          ]}
+          onIconButtonClick={(e, name) => console.log(e, name)}
+        />
+        <br />
+
+        <Appbar
+          startIcon='menu'
+          variant='secondary'
+          renderStartIcon={true}
+          onStartIconClick={(e) => console.log(e)}
+          onClick={(e) => console.log(e)}
+          renderActionButton={true}
+          onActionButtonClick={() => console.log('hi')}
+          actionButtonName='logout'
+        />
+        <br />
+        <Appbar
+          startIcon='menu'
+          variant='secondary'
+          renderStartIcon={true}
+          onStartIconClick={(e) => console.log(e)}
+          onClick={(e) => console.log(e)}
+          // renderActionButton={true}
+          // onActionButtonClick={() => console.log('hi')}
+          // actionButtonName='logout'
+          renderIconButton={true}
+          iconButtons={[
+            { name: 'email', hasBadge: true, count: 4 },
+            { name: 'notifications', count: 9, hasBadge: true },
+            { name: 'account_circle', hasBadge: false }
+          ]}
+          onIconButtonClick={(e, name) => console.log(e, name)}
+        />
+        <br />
+        <Appbar
+          variant='dark'
+          startIcon='menu'
+          renderStartIcon={true}
+          onStartIconClick={(e) => console.log(e)}
+          onClick={(e) => console.log(e)}
+          renderActionButton={true}
+          onActionButtonClick={() => console.log('hi')}
+          actionButtonName='logout'
+        />
+        <br />
+        <Appbar
+          variant='dark'
+          startIcon='menu'
+          renderStartIcon={true}
+          onStartIconClick={(e) => console.log(e)}
+          onClick={(e) => console.log(e)}
+          // renderActionButton={true}
+          // onActionButtonClick={() => console.log('hi')}
+          // actionButtonName='logout'
+          renderIconButton={true}
+          iconButtons={[
+            { name: 'email', hasBadge: true, count: 4 },
+            { name: 'notifications', count: 9, hasBadge: true },
+            { name: 'account_circle', hasBadge: false }
+          ]}
+          onIconButtonClick={(e, name) => console.log(e, name)}
+        />
+        <br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <hr />
     </>
   )
