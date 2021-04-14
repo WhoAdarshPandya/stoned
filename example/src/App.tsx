@@ -13,7 +13,10 @@ import {
   Rating,
   Toast,
   Dialog,
-  Appbar
+  Appbar,
+  Grid,
+  GridRow,
+  GridColumn
 } from 'stoned'
 
 const App = () => {
@@ -690,6 +693,872 @@ const App = () => {
         />
         <br />
       </div>
+      <hr />
+      <div className='grid-container'>
+        <br />
+        <Grid>
+          <>
+            <GridRow justifyContent='space-between' alignItems='center'>
+              <>
+                <GridColumn>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      single col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='space-between' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      two col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      two col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='space-between' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      three col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      three col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      three col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='space-between' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      four col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      four col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      four col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      four col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      five col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      five col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      five col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      five col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      five col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      six col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      six col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      six col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      six col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      six col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      six col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      seven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      seven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      seven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      seven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      seven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      seven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      seven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eight col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      nine col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      ten col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      eleven col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+                <GridColumn gutter>
+                  <div className='check'>
+                    {' '}
+                    <Typography variant='h6' muted>
+                      twelve col
+                    </Typography>{' '}
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn
+                  gutter
+                  flex={8}
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      eight
+                    </Typography>
+                  </div>
+                </GridColumn>
+                <GridColumn
+                  flex={4}
+                  gutter
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      four
+                    </Typography>
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn
+                  gutter
+                  flex={4}
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      four
+                    </Typography>
+                  </div>
+                </GridColumn>
+                <GridColumn
+                  flex={8}
+                  gutter
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      eight
+                    </Typography>
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn
+                  gutter
+                  flex={3}
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      three
+                    </Typography>
+                  </div>
+                </GridColumn>
+                <GridColumn
+                  flex={9}
+                  gutter
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      nine
+                    </Typography>
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn
+                  gutter
+                  flex={9}
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      nine
+                    </Typography>
+                  </div>
+                </GridColumn>
+                <GridColumn
+                  flex={3}
+                  gutter
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      three
+                    </Typography>
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn
+                  gutter
+                  flex={7}
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      seven
+                    </Typography>
+                  </div>
+                </GridColumn>
+                <GridColumn
+                  flex={5}
+                  gutter
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      five
+                    </Typography>
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+            <br />
+            <GridRow justifyContent='center' alignItems='center'>
+              <>
+                <GridColumn
+                  gutter
+                  flex={5}
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      five
+                    </Typography>
+                  </div>
+                </GridColumn>
+                <GridColumn
+                  flex={7}
+                  gutter
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <div className='check'>
+                    <Typography variant='h6' muted>
+                      seven
+                    </Typography>
+                  </div>
+                </GridColumn>
+              </>
+            </GridRow>
+          </>
+        </Grid>
+      </div>
+      <hr />
       <br />
       <br />
       <br />

@@ -163,3 +163,44 @@ export interface IconButtonsAppbar {
   hasBadge: boolean
   count?: number
 }
+
+export interface GridProps {
+  onClick?: (e: any) => void
+  children?: JSX.Element | null | ''
+}
+
+export interface GridRowProps {
+  onClick?: (e: any) => void
+  children?: JSX.Element | null | ''
+  justifyContent?:
+    | 'center'
+    | 'end'
+    | 'flex-start'
+    | 'flex-end'
+    | 'left'
+    | 'right'
+    | 'start'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly'
+  alignItems?: 'center' | 'flex-end' | 'flex-start'
+}
+
+export interface GridColumnProps {
+  onClick?: (e: any) => void
+  children?: JSX.Element | null | ''
+  justifyContent?:
+    | 'center'
+    | 'end'
+    | 'flex-start'
+    | 'flex-end'
+    | 'left'
+    | 'right'
+    | 'start'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly'
+  alignItems?: 'center' | 'flex-end' | 'flex-start'
+  gutter?: boolean
+  flex?: number | null
+}

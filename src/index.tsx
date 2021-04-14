@@ -13,5 +13,8 @@ export {
   Rating,
   Toast,
   Dialog,
-  Appbar
+  Appbar,
+  Grid,
+  GridRow,
+  GridColumn
 } from './components'
