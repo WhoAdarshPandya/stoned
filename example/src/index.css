@@ -9,7 +9,8 @@ body {
 }
 
 .appbar-container,
-.grid-container {
+.grid-container,
+.card-holder {
   width: 90% !important;
   margin: 0 auto !important;
 }
@@ -23,6 +24,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.card-btn-c button {
+  color: black !important;
 }
 
 .grid-container {

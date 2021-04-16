@@ -64,7 +64,7 @@ export interface ImageProps {
 }
 
 export interface TypographyProps {
-  children?: string
+  children?: string | JSX.Element
   variant?:
     | 'h1'
     | 'h2'
@@ -203,4 +203,20 @@ export interface GridColumnProps {
   alignItems?: 'center' | 'flex-end' | 'flex-start'
   gutter?: boolean
   flex?: number | null
+}
+
+export interface CardProps {
+  onClick?: (e: any) => void
+  elevation?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+  children?: JSX.Element | null
+}
+
+export interface CardContentProps {
+  onClick?: (e: any) => void
+  children?: JSX.Element | null
+}
+
+export interface CardActionsProps {
+  onClick?: (e: any) => void
+  children?: JSX.Element | null
 }

@@ -9,7 +9,7 @@ export const GridColumn = ({
   children = null,
   flex = null,
   onClick
-}: GridColumnProps) => {
+}: GridColumnProps): JSX.Element => {
   return (
     <div
       style={{

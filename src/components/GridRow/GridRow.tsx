@@ -7,7 +7,7 @@ export const GridRow = ({
   children = null,
   alignItems = 'center',
   justifyContent = 'center'
-}: GridRowProps) => {
+}: GridRowProps): JSX.Element => {
   return (
     <div
       onClick={(e: any) => {

@@ -16,7 +16,10 @@ import {
   Appbar,
   Grid,
   GridRow,
-  GridColumn
+  GridColumn,
+  Card,
+  CardContent,
+  CardActions
 } from 'stoned'
 
 const App = () => {
@@ -700,7 +703,7 @@ const App = () => {
           <>
             <GridRow justifyContent='space-between' alignItems='center'>
               <>
-                <GridColumn>
+                <GridColumn gutter>
                   <div className='check'>
                     {' '}
                     <Typography variant='h6' muted>
@@ -1559,6 +1562,39 @@ const App = () => {
         </Grid>
       </div>
       <hr />
+      <div className='card-holder'>
+        <p>card idhar ayenge</p>
+        <Card>
+          <>
+            <CardContent>
+              <>
+                <Typography variant='body1' muted gutterBottom>
+                  Word of the Day
+                </Typography>
+                <Typography variant='h5'>be•nev•o•lent</Typography>
+                <Typography variant='body1' muted gutterBottom>
+                  adjective
+                </Typography>
+                <Typography variant='body2' gutterBottom>
+                  <>
+                    well meaning and kindly. <br />
+                    "a benevolent smile"
+                  </>
+                </Typography>
+              </>
+            </CardContent>
+            <CardActions>
+              <div className=''>
+                <br />
+                <Button color='inherit' textColor='textColorPrimary'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </CardActions>
+          </>
+        </Card>
+        <Card></Card>
+      </div>
       <br />
       <br />
       <br />
