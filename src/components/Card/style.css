@@ -48,13 +48,62 @@
     0px 10px 14px 1px rgb(0 0 0 / 14%), 0px 4px 18px 3px rgb(0 0 0 / 12%);
 }
 
+.card-badge::after {
+  position: absolute;
+  content: attr(data-label);
+  top: 11px;
+  right: -14px;
+  padding: 0.5rem;
+  z-index: 10;
+  background: #1976d2;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto';
+  box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+.card-badge::before {
+  position: absolute !important;
+  content: '' !important;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-left: 14.5px solid #115293;
+  top: 1.3rem !important;
+  right: -0.8795rem;
+}
+
 .card-parent {
+  position: relative;
   padding: 16px !important;
   border-radius: 4px !important;
   width: fit-content !important;
   min-width: 275px !important;
+  z-index: 10 !important;
+  max-width: 275px !important;
 }
 
+.card-horizontal {
+  min-width: 275px !important;
+  max-width: 500px !important;
+}
+
+.media-padding {
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 .variant-outlined {
   border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.card-overlay {
+  object-fit: cover !important;
+  /* min-height: 250px !important; */
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 300ms;
+  background-blend-mode: overlay !important;
 }

@@ -209,14 +209,30 @@ export interface CardProps {
   onClick?: (e: any) => void
   elevation?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
   children?: JSX.Element | null
+  variant?: 'standard' | 'overlay' | 'horizontal'
+  src?: string | null
+  cardBadge?: string
+  renderBadge?: boolean
+  containsMedia?: boolean
 }
 
 export interface CardContentProps {
   onClick?: (e: any) => void
   children?: JSX.Element | null
+  explicitPadding?: boolean
+  paddingVertical?: string
 }
 
 export interface CardActionsProps {
   onClick?: (e: any) => void
   children?: JSX.Element | null
+  explicitPadding?: boolean
+  paddingVertical?: string
+}
+
+export interface CardMediaProps {
+  onClick?: (e: any) => void
+  variant?: 'landscape' | 'square'
+  src?: string
+  alt?: string
 }

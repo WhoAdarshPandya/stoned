@@ -1,5 +1,5 @@
 .gutter-bottom {
-  margin-bottom: 0.35em;
+  margin-bottom: 0.35em !important;
 }
 
 .typography-header,
@@ -63,6 +63,8 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
+  padding: 0 !important;
+  margin: 0 !important;
   letter-spacing: 0.00938em;
 }
 .subtitle2 {

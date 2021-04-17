@@ -19,5 +19,6 @@ export {
   GridColumn,
   Card,
   CardContent,
-  CardActions
+  CardActions,
+  CardMedia
 } from './components'

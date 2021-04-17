@@ -2,6 +2,9 @@
   width: 100%;
 }
 
+.card-action-parent-padding {
+  padding: 0px 16px !important;
+}
 .card-action-parent button {
   margin: 0 !important;
   padding: 4px 5px !important;

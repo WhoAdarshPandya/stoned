@@ -19,7 +19,8 @@ import {
   GridColumn,
   Card,
   CardContent,
-  CardActions
+  CardActions,
+  CardMedia
 } from 'stoned'
 
 const App = () => {
@@ -55,7 +56,7 @@ const App = () => {
         color='inherit'
         textColor='textColorPrimary'
         // disableRipple={true}
-        onClick={(e) => {
+        onClick={(e: any) => {
           console.log(e)
         }}
       >
@@ -65,7 +66,7 @@ const App = () => {
         color='inherit'
         textColor='textColorPrimary'
         disableRipple={true}
-        onClick={(e) => {
+        onClick={(e: any) => {
           console.log(e)
         }}
       >
@@ -1593,8 +1594,213 @@ const App = () => {
             </CardActions>
           </>
         </Card>
-        <Card></Card>
+        <br />
+        <Card
+          variant='overlay'
+          src={`https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80`}
+        >
+          <>
+            <CardContent>
+              <>
+                <Typography variant='body1' color='white' gutterBottom>
+                  Word of the Day
+                </Typography>
+                <Typography variant='h5' color='white'>
+                  be•nev•o•lent
+                </Typography>
+                <Typography variant='body1' color='white' muted gutterBottom>
+                  adjective
+                </Typography>
+                <Typography variant='body2' gutterBottom color='white'>
+                  <>
+                    well meaning and kindly. <br />
+                    "a benevolent smile"
+                  </>
+                </Typography>
+              </>
+            </CardContent>
+            <CardActions>
+              <div className=''>
+                <br />
+                <Button color='inherit' textColor='textColorWhite'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </CardActions>
+          </>
+        </Card>
+        <br />
+        <Card
+          variant='overlay'
+          src='https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80'
+        >
+          <>
+            <CardContent>
+              <>
+                <Typography variant='body1' color='white' gutterBottom>
+                  Word of the Day
+                </Typography>
+                <Typography variant='h5' color='white'>
+                  be•nev•o•lent
+                </Typography>
+                <Typography variant='body1' color='white' muted gutterBottom>
+                  adjective
+                </Typography>
+                <Typography variant='body2' gutterBottom color='white'>
+                  <>
+                    well meaning and kindly. <br />
+                    "a benevolent smile"
+                  </>
+                </Typography>
+              </>
+            </CardContent>
+            <CardActions>
+              <div className=''>
+                <br />
+                <Button color='inherit' textColor='textColorWhite'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </CardActions>
+          </>
+        </Card>
+        <br />
+        <Card
+          renderBadge={true}
+          cardBadge='In Progress...'
+          elevation={7}
+          variant='overlay'
+          src='https://images.unsplash.com/photo-1519575396444-2e78bc5f4afc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80'
+        >
+          <>
+            <CardContent>
+              <>
+                <Typography variant='body1' color='white' gutterBottom>
+                  Word of the Day
+                </Typography>
+                <Typography variant='h5' color='white'>
+                  be•nev•o•lent
+                </Typography>
+                <Typography variant='body1' color='white' muted gutterBottom>
+                  adjective
+                </Typography>
+                <Typography variant='body2' gutterBottom color='white'>
+                  <>
+                    well meaning and kindly. <br />
+                    "a benevolent smile"
+                  </>
+                </Typography>
+              </>
+            </CardContent>
+            <CardActions>
+              <div className=''>
+                <br />
+                <Button color='inherit' textColor='textColorWhite'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </CardActions>
+          </>
+        </Card>
+        <br />
+        <Card containsMedia={true}>
+          <>
+            <CardMedia src='https://material-ui.com/static/images/cards/contemplative-reptile.jpg' />
+            <CardContent explicitPadding>
+              <>
+                {/* <br /> */}
+                <Typography variant='h5' gutterBottom>
+                  Lizard
+                </Typography>
+                <br />
+                <Typography variant='body2' muted>
+                  Lizards are a widespread group of squamate reptiles, with over
+                  6,000 species, ranging across all continents except Antarctica
+                </Typography>
+              </>
+            </CardContent>
+            <CardActions explicitPadding>
+              <div className=''>
+                <Button color='inherit' textColor='textColorPrimary'>
+                  share
+                </Button>
+                <Button color='inherit' textColor='textColorPrimary'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </CardActions>
+          </>
+        </Card>
+        <br />
+        <Card containsMedia={true}>
+          <>
+            <CardContent explicitPadding paddingVertical='10px !important'>
+              <div className='card-menu'>
+                <Avatar size='small'>A</Avatar>
+                <div className='card-text'>
+                  <Typography variant='body2'>Adarsh Pandya</Typography>
+                  <Typography variant='body2' muted>
+                    September 14, 2016
+                  </Typography>
+                </div>
+                <div className='card-inner-menu'>
+                  <IconButton size='small'>more_vert</IconButton>
+                </div>
+              </div>
+            </CardContent>
+            <CardMedia src='https://www.businessmodulehub.com/wp-content/uploads/2019/08/sacred-games-season-2-poster.jpg.webp' />
+            <CardContent explicitPadding>
+              <Typography variant='body2' muted gutterBottom>
+                This episode titled foreshadowed another one of Guruji’s
+                sermons. In his lecture, he tells the story of the Hindu
+                mythology demon, Apasmara, the God of Ego and arrogance. His
+                weakness, although, was his need for attention.
+              </Typography>
+            </CardContent>
+            <CardActions explicitPadding>
+              <div className='card-icons-bottom'>
+                <div>
+                  <IconButton size='small'>favorite</IconButton>
+                  <IconButton size='small'>share</IconButton>
+                </div>
+                <div>
+                  <IconButton size='small'>thumb_up</IconButton>
+                </div>
+              </div>
+            </CardActions>
+          </>
+        </Card>
+        <br />
+        <div className='music-parent'>
+          <Card containsMedia={true} variant='horizontal'>
+            <>
+              <div className='music-card'>
+                <CardContent explicitPadding>
+                  <>
+                    <div className='music-inner1'>
+                      <Typography variant='h5'>
+                        Jiya Ho Bihar Ke Lala
+                      </Typography>
+                      <Typography variant='subtitle1' muted>
+                        Manoj Tiwari
+                      </Typography>
+                    </div>
+                    <br />
+                    <div className='music-inner2'>
+                      <IconButton>skip_previous</IconButton>
+                      <IconButton size='large'>play_arrow</IconButton>
+                      <IconButton>skip_next</IconButton>
+                    </div>
+                  </>
+                </CardContent>
+                <CardMedia src='https://www.winwallpapers.net/w1/2014/12/Gangs-of-Wasseypur-2012-Wallpapers.jpg' />
+              </div>
+            </>
+          </Card>
+        </div>
       </div>
+      <hr />
+      list yaha ayega
       <br />
       <br />
       <br />

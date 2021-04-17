@@ -3,6 +3,7 @@ import { CardActionsProps } from '../propTypes/componentPropTypes'
 import './style.css'
 
 export const CardActions = ({
+  explicitPadding,
   children = null,
   onClick
 }: CardActionsProps): JSX.Element => {
@@ -11,7 +12,9 @@ export const CardActions = ({
       onClick={(e: any) => {
         onClick && onClick(e)
       }}
-      className='card-action-parent'
+      className={`card-action-parent ${
+        explicitPadding ? 'card-action-parent-padding' : ''
+      }`}
     >
       {children}
     </div>
