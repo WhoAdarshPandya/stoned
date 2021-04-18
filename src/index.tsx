@@ -20,5 +20,8 @@ export {
   Card,
   CardContent,
   CardActions,
-  CardMedia
+  CardMedia,
+  List,
+  ListItem,
+  Divider
 } from './components'

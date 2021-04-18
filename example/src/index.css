@@ -63,3 +63,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.list-holder {
+  width: 90%;
+  margin: 0 auto !important;
+}
+.user-datta {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.user-detail {
+  margin-left: 10px !important;
+  margin-right: 20px !important;
+}

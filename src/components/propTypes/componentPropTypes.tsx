@@ -236,3 +236,14 @@ export interface CardMediaProps {
   src?: string
   alt?: string
 }
+
+export interface ListProps {
+  onClick?: (e: any) => void
+  children?: JSX.Element | null
+  elevation?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+}
+
+export interface ListItemProps {
+  onClick?: (e: any) => void
+  children?: JSX.Element | null
+}

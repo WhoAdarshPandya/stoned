@@ -7,7 +7,7 @@ export const CardMedia = ({
   alt = 'no alt',
   src = '',
   variant = 'landscape'
-}: CardMediaProps) => {
+}: CardMediaProps): JSX.Element => {
   console.log(variant)
   console.log(src)
   return (

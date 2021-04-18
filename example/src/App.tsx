@@ -20,7 +20,10 @@ import {
   Card,
   CardContent,
   CardActions,
-  CardMedia
+  List,
+  CardMedia,
+  ListItem,
+  Divider
 } from 'stoned'
 
 const App = () => {
@@ -33,7 +36,32 @@ const App = () => {
   const [sliVal, setSliVal] = useState(0)
   const [sliVal2, setSliVal2] = useState(0)
   const [showToast, setShowToast] = useState(false)
+  const [showToast1, setShowToast1] = useState(false)
+  const [showToast2, setShowToast2] = useState(false)
+  const [showToast3, setShowToast3] = useState(false)
+  const [showToast4, setShowToast4] = useState(false)
+  const [showToast5, setShowToast5] = useState(false)
   const [showDialog, setShowDialog] = useState(false)
+  const [data] = useState([
+    {
+      profle_url:
+        'https://filmspell.com/wp-content/uploads/2019/03/Manoj-Bajpayee-Sardar-Khan-Gangs-of-Wasseypur-I-2012-420x280.jpg',
+      name: 'Sardar Khan',
+      dialogue: 'hazrat hazrat hazrat'
+    },
+    {
+      profle_url:
+        'https://www.india.com/wp-content/uploads/2014/01/ramadhir-singh.jpg',
+      name: 'Ramadhir Singh',
+      dialogue: 'saale sanp ko paal rahe the'
+    },
+    {
+      profle_url:
+        'https://images.firstpost.com/wp-content/uploads/2020/06/jaideep-ahlawat-640.jpg?impolicy=website&width=1200&height=800',
+      name: 'Shahid Khan',
+      dialogue: 'harami man sala mane kaise'
+    }
+  ])
   return (
     <>
       <Button
@@ -552,7 +580,42 @@ const App = () => {
           setShowToast((prev) => !prev)
         }}
       >
-        show toast
+        show normal toast
+      </Button>
+      <Button
+        onClick={() => {
+          setShowToast1((prev) => !prev)
+        }}
+      >
+        show success toast
+      </Button>
+      <Button
+        onClick={() => {
+          setShowToast2((prev) => !prev)
+        }}
+      >
+        show error toast
+      </Button>
+      <Button
+        onClick={() => {
+          setShowToast3((prev) => !prev)
+        }}
+      >
+        show info toast
+      </Button>
+      <Button
+        onClick={() => {
+          setShowToast4((prev) => !prev)
+        }}
+      >
+        show warning toast
+      </Button>
+      <Button
+        onClick={() => {
+          setShowToast5((prev) => !prev)
+        }}
+      >
+        show toast with button
       </Button>
       {showToast && (
         <Toast
@@ -573,8 +636,123 @@ const App = () => {
             setShowToast(false)
           }}
           message='the standard toast'
+          variant='standard'
+          anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
+        />
+      )}
+      {showToast1 && (
+        <Toast
+          onClick={(e: any) => {
+            console.log(e)
+          }}
+          onFinish={() => {
+            setShowToast1(false)
+          }}
+          renderCloseButton={true}
+          onCloseClick={() => {
+            setShowToast1(false)
+          }}
+          autoHideDuration={5}
+          renderActionButton={false}
+          actionButtonName='close'
+          onButtonClick={() => {
+            setShowToast1(false)
+          }}
+          message='the success toast'
+          variant='success'
+          anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+        />
+      )}
+      {showToast2 && (
+        <Toast
+          onClick={(e: any) => {
+            console.log(e)
+          }}
+          onFinish={() => {
+            setShowToast2(false)
+          }}
+          renderCloseButton={true}
+          onCloseClick={() => {
+            setShowToast2(false)
+          }}
+          autoHideDuration={5}
+          renderActionButton={false}
+          actionButtonName='close'
+          onButtonClick={() => {
+            setShowToast2(false)
+          }}
+          message='the error toast'
+          variant='error'
+          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+        />
+      )}
+      {showToast3 && (
+        <Toast
+          onClick={(e: any) => {
+            console.log(e)
+          }}
+          onFinish={() => {
+            setShowToast3(false)
+          }}
+          renderCloseButton={true}
+          onCloseClick={() => {
+            setShowToast3(false)
+          }}
+          autoHideDuration={5}
+          renderActionButton={false}
+          actionButtonName='close'
+          onButtonClick={() => {
+            setShowToast3(false)
+          }}
+          message='the info toast'
           variant='info'
           anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        />
+      )}
+      {showToast4 && (
+        <Toast
+          onClick={(e: any) => {
+            console.log(e)
+          }}
+          onFinish={() => {
+            setShowToast4(false)
+          }}
+          renderCloseButton={true}
+          onCloseClick={() => {
+            setShowToast4(false)
+          }}
+          autoHideDuration={5}
+          renderActionButton={false}
+          actionButtonName='close'
+          onButtonClick={() => {
+            setShowToast4(false)
+          }}
+          message='the warning toast'
+          variant='warning'
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+        />
+      )}
+      {showToast5 && (
+        <Toast
+          onClick={(e: any) => {
+            console.log(e)
+          }}
+          onFinish={() => {
+            setShowToast5(false)
+          }}
+          renderCloseButton={false}
+          onCloseClick={() => {
+            setShowToast5(false)
+          }}
+          autoHideDuration={5}
+          renderActionButton={true}
+          actionButtonName='close'
+          onButtonClick={() => {
+            setShowToast5(false)
+          }}
+          message='toast with button'
+          variant='standard'
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
         />
       )}
       <hr />
@@ -594,8 +772,6 @@ const App = () => {
             setShowDialog(false)
           }}
           setAutoHide={false}
-          title='Still want to continue?'
-          message='agreeing on this term will make you a strong devotee of sadhguru which is utter bullshit if you ask me'
           // cancellable={false}
           positiveButtonText='okay'
           negativeButtonText='cancel'
@@ -604,7 +780,7 @@ const App = () => {
             setShowDialog(false)
           }}
           onNegativeButtonClick={() => {
-            alert('sadhguru ko sunie')
+            alert('cancel pressed')
           }}
         />
       )}
@@ -1800,7 +1976,62 @@ const App = () => {
         </div>
       </div>
       <hr />
-      list yaha ayega
+      <div className='list-holder'>
+        <List elevation={6}>
+          <>
+            <Typography variant='body1' muted>
+              GOW Fans
+            </Typography>
+            {data.map(({ dialogue, name, profle_url }) => (
+              <ListItem key={name}>
+                <>
+                  <div className='user-datta'>
+                    <Avatar size='small' src={profle_url} />
+                    <div className='user-detail'>
+                      <Typography variant='body1'>{name}</Typography>
+                      <Typography variant='body2' muted>
+                        {dialogue}
+                      </Typography>
+                    </div>
+                  </div>
+                  <div>
+                    <IconButton size='small'>delete</IconButton>
+                  </div>
+                </>
+              </ListItem>
+            ))}
+          </>
+        </List>
+        <br />
+        <List elevation={6}>
+          <>
+            <Typography variant='body1' muted>
+              GOW Fans
+            </Typography>
+            {data.map(({ dialogue, name, profle_url }) => (
+              <React.Fragment key={name}>
+                <ListItem key={name}>
+                  <>
+                    <div className='user-datta'>
+                      <Avatar size='small' src={profle_url} />
+                      <div className='user-detail'>
+                        <Typography variant='body1'>{name}</Typography>
+                        <Typography variant='body2' muted>
+                          {dialogue}
+                        </Typography>
+                      </div>
+                    </div>
+                    <div>
+                      <IconButton size='small'>share</IconButton>
+                    </div>
+                  </>
+                </ListItem>
+                <Divider />
+              </React.Fragment>
+            ))}
+          </>
+        </List>
+      </div>
       <br />
       <br />
       <br />
