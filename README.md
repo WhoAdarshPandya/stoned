@@ -1,8 +1,5 @@
 # stoned
 
-> dev mode
-
-<br/>
 
 > hand crafted react components made with love for your next react project
 
@@ -17,6 +14,7 @@ npm install --save stoned
 ## Usage
 
 ```tsx
+
 import { Button } from 'stoned'
 import 'stoned/dist/index.css'
 
