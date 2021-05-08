@@ -15,14 +15,18 @@ npm install --save stoned
 ```tsx
 import React, { Component } from 'react'
 
-import {Button} from 'stoned'
+import { Button } from 'stoned'
 import 'stoned/dist/index.css'
 
 export const App = () => {
   return (
-    <Button variant="primary">Primary</Button>
-    <Button variant="secondary">Secondary</Button>
-    <Button variant="primary" raised={true} disableRipple={true}>Primary</Button>
+    <>
+      <Button variant='primary'>Primary</Button>
+      <Button variant='secondary'>Secondary</Button>
+      <Button variant='primary' raised={true} disableRipple={true}>
+        Primary
+      </Button>
+    </>
   )
 }
 ```
