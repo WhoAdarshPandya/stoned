@@ -1,0 +1,8 @@
+.grid-col {
+  width: 100% !important;
+  display: flex !important;
+}
+
+.grid-col-padding {
+  padding: 10px;
+}

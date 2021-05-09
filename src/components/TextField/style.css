@@ -1,0 +1,291 @@
+.group {
+  position: relative;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  margin-left: 15px;
+  user-select: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+/**** standard input ****/
+.standard-input {
+  font-size: 18px;
+  padding: 10px 10px 10px 0px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  transition: all 100ms;
+}
+
+.standard-input:focus {
+  outline: none;
+}
+
+.standard-input-label,
+.standard-input-label-err {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  top: 13px;
+  transition: 0.2s ease all;
+}
+
+.standard-input:focus ~ .standard-input-label,
+.standard-input:valid ~ .standard-input-label {
+  top: -15px;
+  font-size: 14px;
+  color: #1976d2;
+}
+
+.standard-input:focus ~ .standard-input-label-err,
+.standard-input:valid ~ .standard-input-label-err {
+  top: -15px;
+  font-size: 14px;
+  color: #f44336;
+}
+
+.standard-input-bar {
+  position: relative;
+  display: block;
+  width: 300px !important;
+}
+
+.standard-input-bar-err {
+  position: relative;
+  display: block;
+  width: 300px !important;
+}
+
+.standard-input-bar:before,
+.standard-input-bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: -0.5px;
+  position: absolute;
+  background: #1976d2;
+  transition: 0.2s ease all;
+}
+
+.standard-input-bar-err:before,
+.standard-input-bar-err:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: -0.5px;
+  position: absolute;
+  background: #f44336;
+  transition: 0.2s ease all;
+}
+
+.standard-input-bar:before {
+  left: 50%;
+}
+
+.standard-input-bar-err:before {
+  left: 50%;
+}
+.standard-input-bar:after {
+  right: 50%;
+}
+
+.standard-input-bar-err:after {
+  right: 50%;
+}
+
+.standard-input:focus ~ .standard-input-bar:before,
+.standard-input:focus ~ .standard-input-bar:after {
+  width: 50% !important;
+}
+
+.standard-input:focus ~ .standard-input-bar-err:before,
+.standard-input:focus ~ .standard-input-bar-err:after {
+  width: 50% !important;
+}
+/**** standard input ****/
+
+/**** filled input ****/
+.filled-input {
+  background: #e8e8e8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 18px;
+  padding: 10px 10px 10px 10px !important;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  transition: all 400ms;
+}
+
+.filled-input:hover {
+  background: #dedede !important;
+}
+
+.filled-input:focus {
+  outline: none;
+}
+
+.filled-input-label,
+.filled-input-label-err {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 13px;
+  transition: 0.2s ease all;
+}
+
+.filled-input:focus ~ .filled-input-label,
+.filled-input:valid ~ .filled-input-label {
+  top: -20px;
+  font-size: 14px;
+  color: #1976d2;
+}
+
+.filled-input:focus ~ .filled-input-label-err,
+.filled-input:valid ~ .filled-input-label-err {
+  top: -20px;
+  font-size: 14px;
+  color: #f44336;
+}
+
+.filled-input-bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.filled-input-bar-err {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.filled-input-bar:before,
+.filled-input-bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: -0.5px;
+  position: absolute;
+  background: #1976d2;
+  transition: 0.2s ease all;
+}
+
+.filled-input-bar-err:before,
+.filled-input-bar-err:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: -0.5px;
+  position: absolute;
+  background: #f44336;
+  transition: 0.2s ease all;
+}
+
+.filled-input-bar:before {
+  left: 50%;
+}
+.filled-input-bar:after {
+  right: 50%;
+}
+
+.filled-input-bar-err:before {
+  left: 50%;
+}
+.filled-input-bar-err:after {
+  right: 50%;
+}
+
+.filled-input:focus ~ .filled-input-bar:before,
+.filled-input:focus ~ .filled-input-bar:after {
+  width: 50%;
+}
+
+.filled-input:focus ~ .filled-input-bar-err:before,
+.filled-input:focus ~ .filled-input-bar-err:after {
+  width: 50%;
+}
+/**** filled input ****/
+
+/**** outlined input ****/
+.outlined-input,
+.outlined-input-err {
+  font-size: 18px;
+  border: 1px solid #c4c4c4 !important;
+  border-radius: 5px;
+  padding: 15px 10px 15px 15px;
+  display: block;
+  width: 300px;
+  /*   border:none; */
+  border-bottom: 1px solid #757575;
+  transition: all 300ms;
+}
+
+.outlined-input:hover,
+.outlined-input-err:hover {
+  border-color: #262626 !important;
+}
+
+.outlined-input:focus {
+  outline-color: #1976d2;
+}
+
+.outlined-input-err:focus {
+  outline-color: #f44336;
+}
+
+.outlined-label,
+.outlined-label-err {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 16px;
+  transition: 0.2s ease all;
+}
+
+.outlined-input:focus ~ .outlined-label,
+.outlined-input:valid ~ .outlined-label {
+  top: -8px;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #1976d2;
+  background: white;
+}
+
+.outlined-input-err:focus ~ .outlined-label-err,
+.outlined-input-err:valid ~ .outlined-label-err {
+  top: -8px;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #f44336;
+  background: white;
+}
+
+/**** outlined input ****/
+
+/* error-utils */
+.helper-text {
+  font-size: 14px;
+}
+
+.p-10 {
+  padding-left: 10px;
+}
+
+.p-15 {
+  padding-left: 15px;
+}
+
+.error-color {
+  color: #f44336;
+}

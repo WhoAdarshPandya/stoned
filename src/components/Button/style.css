@@ -1,0 +1,156 @@
+.ripple-button {
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  user-select: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-weight: 590;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.dan-text {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.btn-text {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.primaryOutlined {
+  border: 1px solid #1976d2 !important;
+  background: inherit !important;
+  color: #1976d2 !important;
+  box-shadow: none !important;
+}
+
+.secondaryOutlined {
+  background: inherit !important;
+  border: 1px solid #dc004e !important;
+  color: #dc004e !important;
+  box-shadow: none !important;
+}
+
+.large {
+  padding: 12px 24px;
+  font-size: 1.063em;
+}
+
+.small {
+  padding: 7px 15px;
+  font-size: 0.625em;
+}
+
+.medium {
+  padding: 8px 16px;
+  font-size: 0.875em;
+}
+
+.raised {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.raised:active {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4) !important;
+}
+
+.ripple-button > .ripple {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #bbc3ce71;
+  display: block;
+  content: '';
+  border-radius: 9999px;
+  opacity: 1;
+  animation: 0.8s ease 1 forwards ripple-effect;
+}
+
+.textColorPrimaryRipple {
+  background: #b4d3f0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.textColorSecondaryRipple {
+  background: #f4acc5 !important;
+}
+
+@keyframes ripple-effect {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(10);
+    opacity: 0.375;
+  }
+  100% {
+    transform: scale(35);
+    opacity: 0;
+  }
+}
+
+.ripple-button > .content {
+  position: relative;
+  z-index: 2;
+}
+
+.primary:hover {
+  background: #115293;
+}
+
+.textColorPrimary {
+  color: #1976d2;
+}
+
+.textColorWhite {
+  color: #fff;
+}
+.textColorSecondary {
+  color: #dc004e;
+}
+
+.primary {
+  background: #1976d2;
+  box-shadow: 0px 4px 10px rgba(33, 150, 243, 0.4);
+  transition: 300ms all ease-in-out;
+}
+
+.secondary {
+  background: #dc004e;
+  box-shadow: 0px 4px 10px rgba(255, 23, 68, 0.4);
+  transition: 300ms all ease-in-out;
+}
+
+.secondary:hover {
+  background: #9a0036;
+}
+
+.inherit {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}

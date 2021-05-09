@@ -1,0 +1,265 @@
+.snackbar {
+  animation: slideBottomLeft 300ms forwards,
+    slideoutBottomLeft 300ms forwards 5s;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.01071em;
+  font-weight: 400;
+  min-height: 14px;
+  background-color: rgb(49, 49, 49);
+  position: fixed;
+  color: white;
+  text-transform: capitalize;
+  padding: 14px 22px;
+  border-radius: 4px;
+  z-index: 3;
+  /* experimental */
+  display: flex !important;
+  justify-items: center !important;
+  align-items: center !important;
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+    0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+}
+
+.top-left {
+  left: 15px !important;
+  animation: slideTopLeft 300ms forwards, slideoutTopLeft 300ms forwards 5s !important;
+}
+
+.bottom-left {
+  left: 15px !important;
+  animation: slideBottomLeft 300ms forwards,
+    slideoutBottomLeft 300ms forwards 5s !important;
+}
+
+.top-right {
+  right: 15px !important;
+  animation: slideTopLeft 300ms forwards, slideoutTopLeft 300ms forwards 5s !important;
+}
+
+.bottom-right {
+  right: 15px !important;
+  animation: slideBottomRight 300ms forwards,
+    slideoutBottomRight 300ms forwards 5s !important;
+}
+
+.top-center,
+.bottom-center {
+  left: 50% !important;
+  transform: translate(-50%, 0) !important;
+}
+
+.top-center {
+  animation: slideTopCenter 300ms forwards, slideoutTopCenter 300ms forwards 5s !important;
+}
+
+.bottom-center {
+  animation: slideBottomCenter 300ms forwards,
+    slideoutBottomCenter 300ms forwards 5s !important;
+}
+
+.message-icon {
+  margin-top: 2px;
+  transform: scale(0.9);
+  margin-right: 5px !important;
+}
+
+.success-toast-color {
+  background-color: #4caf50 !important;
+}
+
+.warning-toast-color {
+  background-color: #ff9800 !important;
+}
+
+.info-toast-color {
+  background-color: #2196f3 !important;
+}
+
+.error-toast-color {
+  background-color: #f44336 !important;
+}
+
+.padding-for-icon-btn {
+  padding: 2px 22px !important;
+}
+
+@keyframes slideoutBottomLeft {
+  100% {
+    opacity: 0;
+    bottom: -100px;
+    display: none;
+  }
+}
+
+@keyframes slideoutTopLeft {
+  100% {
+    opacity: 0;
+    top: -100px;
+    display: none;
+  }
+}
+
+@keyframes slideoutTopRight {
+  100% {
+    opacity: 0;
+    top: -100px;
+    display: none;
+  }
+}
+
+@keyframes slideoutTopCenter {
+  100% {
+    opacity: 0;
+    top: -100px;
+    display: none;
+  }
+}
+
+@keyframes slideoutBottomCenter {
+  100% {
+    opacity: 0;
+    bottom: -100px;
+    display: none;
+  }
+}
+
+@keyframes slideoutBottomRight {
+  100% {
+    opacity: 0;
+    bottom: -100px;
+    display: none;
+  }
+}
+
+@keyframes slideBottomLeft {
+  0% {
+    opacity: 0;
+    bottom: -100px;
+  }
+  80% {
+    opacity: 1;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 15px;
+  }
+}
+
+@keyframes slideTopLeft {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  80% {
+    opacity: 1;
+    top: 20px;
+  }
+  100% {
+    opacity: 1;
+    top: 15px;
+  }
+}
+
+@keyframes slideTopCenter {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  80% {
+    opacity: 1;
+    top: 20px;
+  }
+  100% {
+    opacity: 1;
+    top: 15px;
+  }
+}
+
+@keyframes slideTopRight {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  80% {
+    opacity: 1;
+    top: 20px;
+  }
+  100% {
+    opacity: 1;
+    top: 15px;
+  }
+}
+
+@keyframes slideBottomCenter {
+  0% {
+    opacity: 0;
+    bottom: -100px;
+  }
+  80% {
+    opacity: 1;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 15px;
+  }
+}
+
+@keyframes slideBottomRight {
+  0% {
+    opacity: 0;
+    bottom: -100px;
+  }
+  80% {
+    opacity: 1;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 15px;
+  }
+}
+
+.action-wrapper {
+  margin: 2px 0px 0px 24px;
+  display: flex;
+  justify-items: center !important;
+  align-items: center;
+}
+
+.action {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  font-size: 0.875rem !important;
+  text-transform: uppercase;
+  color: #f50057 !important;
+  font-weight: bold;
+  padding: 0px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+}
+
+.action i {
+  margin: 0;
+}
+
+.action i span {
+  color: #eee !important;
+  font-weight: 100 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .snackbar {
+    width: 90% !important;
+    margin: 0 auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+  .action-text {
+    width: 80% !important;
+  }
+}

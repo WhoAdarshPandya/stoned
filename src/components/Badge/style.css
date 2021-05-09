@@ -1,0 +1,68 @@
+.badge-parent {
+  position: relative;
+  display: inline-block !important;
+  user-select: none;
+}
+
+.children_inflater {
+  z-index: 0;
+}
+
+.badge-primary {
+  background: #1976d2;
+}
+
+.status-badge {
+  background: #44b700 !important;
+}
+
+.badge-secondary {
+  background: #dc004e;
+}
+
+.anchor-top-left {
+  top: 0;
+  left: 0;
+}
+
+.anchor-top-right {
+  top: 0;
+  right: 0;
+}
+
+.anchor-bottom-left {
+  bottom: 0;
+  left: 0;
+  margin: 4px !important;
+}
+
+.anchor-bottom-right {
+  bottom: 0;
+  right: 0;
+  margin: 4px !important;
+}
+
+.standard {
+  margin: 4px;
+  border: 3px solid white;
+  z-index: 3 !important;
+  border-radius: 100%;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.counter {
+  margin: 3px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  z-index: 3 !important;
+  border-radius: 100%;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  color: white;
+}
